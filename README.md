@@ -9,3 +9,5 @@
 | 18/11/2023 | Introduction to Typescript. |
 | 19/11/2023 | Introduction to Angular and its components. |
 | 20/11/2023 | building first app in angular |
+| 21/11/2023 | building to-do app in angular |
+| 22/11/2023 | basic use of structural and attributes directive *ngif & *ngstyle  |
