@@ -5,11 +5,12 @@
 <br>
 <p>{{serverName}}</p>
 <br>
-<p> &nbsp; server {{serverId}} is {{serverStatus}}  at port: {{serverPort}}   &nbsp;</p>
+<p> &nbsp; server {{serverId}} is at port: {{serverPort}}   &nbsp;</p>
 <br>
 <button class="btn btn-primary" [disabled]="!allowNewServer"
 (click)="onCreateServer()"> CLICK ME
 </button>
 <br>
 <br>
-    <h5>{{serverCreationStatus}}</h5>
+    <h5 [ngStyle]="{backgroundColor: getColor()}"  *ngIf="serverStatus else noServer">{{serverCreationStatus}}</h5>
+<ng-template #noServer> <h5>{{serverCreationStatus}}</h5></ng-template>

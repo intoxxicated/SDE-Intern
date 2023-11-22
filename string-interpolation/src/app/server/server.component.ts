@@ -10,11 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class ServerComponent {
   serverId =10;
-  serverStatus = 'offline';
+  serverStatus = false;
   serverPort = 1443;
   serverName='';
   allowNewServer = false;
-  serverCreationStatus='No Server was Created !!';
+  serverCreationStatus='No New Server Created Yet !!';
   constructor()
   {
     setTimeout(()=>{
@@ -28,11 +28,15 @@ export class ServerComponent {
   }
   onCreateServer()
   {
-    this.serverCreationStatus='Server is Created !!';
+    this.serverStatus=true;
+    this.serverCreationStatus='New Server is Created !!';
   }
   onUpdateServerName(event: Event){
 
     this.serverName= (<HTMLInputElement>event.target).value;
   }
-
+  getColor()
+  {
+    return this.serverStatus ? '#DAF7A6': 'red';
+  }
 }

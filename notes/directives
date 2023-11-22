@@ -1,6 +1,12 @@
+<----------------------- STRUCTURAL DIRECTIVES-------------------------->
 #ngif
 <div *ngIf="condition">Content to render when condition is true.</div>
 
 #ngif with else
 <div *ngIf="condition; else elseBlock">Content to render when condition is true.</div>
 <ng-template #elseBlock>Content to render when condition is false.</ng-template>
+
+
+
+<--------------------ATTRIBUTE DIRECTIVES------------------------>
+
