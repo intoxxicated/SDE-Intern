@@ -13,6 +13,7 @@ export class ServerComponent {
   serverStatus = 'offline'; 
   serverPort = 1443; 
   allowNewServer = false;
+  serverCreationStatus='No Server was Created !!';
   constructor()
   {
     setTimeout(()=>{
@@ -23,6 +24,10 @@ export class ServerComponent {
   getServerPort()
   {
     return this.serverPort;
+  }
+  onCreateServer()
+  {
+    this.serverCreationStatus='Server is Created !!';
   }
 
 }
