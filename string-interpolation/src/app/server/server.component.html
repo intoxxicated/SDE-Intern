@@ -1,3 +1,10 @@
+
+<label>SERVER</label>
+<input type="text" class="form-control"
+(input)="onUpdateServerName($event)" >
+<br>
+<p>{{serverName}}</p>
+<br>
 <p> &nbsp; server {{serverId}} is {{serverStatus}}  at port: {{serverPort}}   &nbsp;</p>
 <br>
 <button class="btn btn-primary" [disabled]="!allowNewServer"

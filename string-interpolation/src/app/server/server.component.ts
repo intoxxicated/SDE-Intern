@@ -10,8 +10,9 @@ import { CommonModule } from '@angular/common';
 })
 export class ServerComponent {
   serverId =10;
-  serverStatus = 'offline'; 
-  serverPort = 1443; 
+  serverStatus = 'offline';
+  serverPort = 1443;
+  serverName='';
   allowNewServer = false;
   serverCreationStatus='No Server was Created !!';
   constructor()
@@ -28,6 +29,10 @@ export class ServerComponent {
   onCreateServer()
   {
     this.serverCreationStatus='Server is Created !!';
+  }
+  onUpdateServerName(event: Event){
+
+    this.serverName= (<HTMLInputElement>event.target).value;
   }
 
 }
