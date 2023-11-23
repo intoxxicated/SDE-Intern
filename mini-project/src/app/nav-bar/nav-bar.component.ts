@@ -9,5 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
+bgColor=false;
+  getColor()
+  {
+    return this.bgColor ? '#d0b1b1': '#DAF7A6';
+  }
 
 }

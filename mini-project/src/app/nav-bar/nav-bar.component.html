@@ -1,12 +1,10 @@
 <nav class="navbar">
-  <div class="navbar-container">
-    <img  class="logo" src="favicon.ico">
+  <div class="navbar-container" [ngStyle]="{backgroundColor:getColor()}">
+    <img  class="logo" src="favicon.ico" (mouseover)="bgColor=!bgColor">
     <ul class="menu-items" >
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#web">Services</a></li>
-      <li><a href="#web-menu">Clients</a></li>
-      <li><a href="#contact">Contact</a></li>
+
     </ul>
 
   </div>

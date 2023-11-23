@@ -14,3 +14,4 @@
 <br>
     <h5 [ngStyle]="{backgroundColor: getColor()}"  *ngIf="serverStatus else noServer">{{serverCreationStatus}}</h5>
 <ng-template #noServer> <h5>{{serverCreationStatus}}</h5></ng-template>
+

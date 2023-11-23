@@ -22,6 +22,10 @@ export class AddItemsComponent {
       this.newTask = '';
     }
   }
+  oneditTask(index:number)
+  {
+
+  }
   public ondeleteTask(index: number) {
     this.items.splice(index, 1);
   }

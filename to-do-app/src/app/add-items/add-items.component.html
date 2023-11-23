@@ -30,10 +30,12 @@
 					justify-content-sm-between align-items-center
 					text-light h3" style="border: 2px solid black;background-color: white">
 
-      <div class="col-4 text-dark">{{x}}</div>
-
-      <input (click)="ondeleteTask(index)" type="button"
-             value="Delete" class="btn btn-danger  justify-content-lg-center">
+      <div class="col-2 text-dark">{{x}}</div>
+      <div >
+        <input (click)="oneditTask(index)" type="button"
+                  value="update" class="btn btn-outline-primary  justify-content-lg-center" style="margin-right: 10px">
+        <input (click)="ondeleteTask(index)" type="button"
+               value="Delete" class="btn btn-outline-danger  justify-content-lg-center"></div>
     </div>
 
     <div class="col-3 d-none col-md-3 d-md-block"></div>

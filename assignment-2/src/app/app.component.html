@@ -1,0 +1,36 @@
+<h1 style="text-align: center" [ngStyle]="{backgroundColor:getColor()}">ASSIGNMENT-2</h1>
+
+<div  class="center" >
+<button class="btn btn-primary" (click)="bgColor=!bgColor"> TOGGLE</button>
+
+</div>
+
+<br>
+<hr>
+<h1 style="text-align: center">INCREMENTER / DECREMENTER</h1>
+<div  class="center">
+  <button class="btn btn-primary" (click)="color='#d9ead3';decrement=false;onClick()"> ++</button>
+
+</div>
+<br>
+<div class="center"><p [ngStyle]="{backgroundColor:color}" >
+  {{counter}}</p>
+</div>
+<br>
+<div  class="center">
+  <button class="btn btn-primary" (click)="color='#ead1dc'; decrement=true; onClick()"> -- </button>
+
+</div>
+<br>
+<br>
+<hr>
+<div class="container">
+<label>Username</label>
+<input type="text" class="form-control w-50" [(ngModel)]="username">
+<br>
+  <p >{{username}}</p>
+  <br>
+  <button class=" btn btn-outline-primary"
+          [disabled]="username===''"
+  (click)="username=''">Reset</button>
+</div>
