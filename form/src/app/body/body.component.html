@@ -1,0 +1,11 @@
+<!-- content.component.html -->
+
+<body  [style.background-color]="isDarkMode ? '#ecc58b' : '#e8d7d7'">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" [(ngModel)]="isDarkMode">
+    <label class="form-check-label" for="flexSwitchCheckDefault" [style.color]="isDarkMode? 'red':'black'" style="font-size: 16px; font-weight: 500">Change Bg-Color</label>
+  </div>
+<hr>
+
+  <app-main></app-main>
+</body>

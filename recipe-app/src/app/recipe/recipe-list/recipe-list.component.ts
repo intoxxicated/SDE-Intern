@@ -11,7 +11,12 @@ import {Recipe} from "../recipe.model";
   styleUrl: './recipe-list.component.css'
 })
 export class RecipeListComponent {
-recipe :Recipe[]=[new Recipe('Recipe-1','This is Recipe-1','https://img.taste.com.au/h2qVkJjl/taste/2021/09/air-fryer-chicken-rissoles-recipe-173558-1.jpg')]
+recipe :Recipe[]=[
+  new Recipe('Recipe-1','This is Recipe-1','https://img.taste.com.au/h2qVkJjl/taste/2021/09/air-fryer-chicken-rissoles-recipe-173558-1.jpg'),
+  new Recipe('Recipe-1','This is Recipe-1','https://img.taste.com.au/h2qVkJjl/taste/2021/09/air-fryer-chicken-rissoles-recipe-173558-1.jpg'),
+  new Recipe('Recipe-1','This is Recipe-1','https://img.taste.com.au/h2qVkJjl/taste/2021/09/air-fryer-chicken-rissoles-recipe-173558-1.jpg'),
+  new Recipe('Recipe-1','This is Recipe-1','https://img.taste.com.au/h2qVkJjl/taste/2021/09/air-fryer-chicken-rissoles-recipe-173558-1.jpg'),
+];
 
 constructor() {
 }
