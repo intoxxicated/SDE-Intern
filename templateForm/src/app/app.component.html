@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<br>
+<hr>
+<br>
+<div class="container" >
+
+<form  #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)" >
+  <input type="text" placeholder="Enter Name" name="name" ngModel style="background-color: #eed7d7"/>
+  <br>
+  <br>
+  <input type="password" placeholder="Enter Password" name="password" ngModel style="background-color: #eed7d7"/>
+  <br>
+  <br>
+  <button class="btn btn-outline-success"> Login </button>
+
+</form>
+</div>

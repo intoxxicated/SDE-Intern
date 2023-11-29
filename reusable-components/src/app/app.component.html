@@ -1,0 +1,53 @@
+<!--  parent to child-->
+<div class="container">
+  <h1>Parent to Child</h1>
+<ul *ngFor="let user of userDetails">
+  <app-user-details [item]="user"></app-user-details>
+</ul>
+  <br>
+<hr>
+<br>
+
+<!--child to parent-->
+
+<h1>Child to Parent</h1>
+<app-child (updateDataEvent)="updateData($event)"></app-child>
+  <br>
+  <hr>
+  <br>
+<!--template reference-->
+<h1>Template Reference Reference Variable</h1>
+
+<input type="text" #box placeholder="Enter any value"/> &nbsp;
+<button class="btn btn-outline-primary" (click)="getVal(box.value)">Call</button> &nbsp; <button class="btn btn-outline-primary" (click)="getVal(box.placeholder)">Call !!</button>
+
+  <br>
+  <hr>
+  <br>
+
+<!--  Advance Pipes-->
+<h1>Advance Pipes</h1>
+  <br>
+  <h3> {{text | uppercase}}</h3>
+  <h3> {{text | lowercase}}</h3>
+  <h3> {{text | slice :3 | lowercase}}</h3>
+  <h3> {{text | titlecase}}</h3>
+  <br>
+  <br>
+
+  <h3> {{today}}</h3>
+  <h3> {{today | date: 'dd/MM/YYYY'}}</h3>
+  <h3> {{today | date: 'fullDate'}}</h3>
+  <h3> {{today | date: 'YYYY/MM/dd'}}</h3>
+  <h3>{{20 | currency:'INR'}}</h3>
+
+  <br>
+  <hr>
+  <br>
+  <h1> Custom Events</h1>
+  <br>
+  <h3>{{20 | usdInr}}</h3>
+  <h3>{{20 | usdInr: 70}}</h3>
+
+
+</div>
